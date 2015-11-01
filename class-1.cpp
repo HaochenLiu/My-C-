@@ -1,3 +1,25 @@
+/*
+sizeof(int) = 4
+sizeof(intA) = 4
+sizeof(vector<int>) = 20
+sizeof(vA) = 20
+sizeof(vector<vector<int>>) = 20
+sizeof(vvA) = 20
+sizeof(unordered_map<int, int>) = 56
+sizeof(umA) = 56
+sizeof(unordered_set<int>) = 56
+sizeof(usA) = 56
+sizeof(CA) = 4
+sizeof(cA) = 4
+sizeof(CB) = 20
+sizeof(cB) = 20
+sizeof(Json) = 24
+sizeof(json) = 24
+
+声明vector之后，vector有固定size，跟类型无关。
+所以一个类可以含有一个包含自己的向量。参见Json。
+*/
+
 #include <algorithm>
 #include <bitset>
 #include <cctype>
