@@ -9,6 +9,10 @@ sizeof(unordered_map<int, int>) = 56
 sizeof(umA) = 56
 sizeof(unordered_set<int>) = 56
 sizeof(usA) = 56
+sizeof(map<int, int>) = 20
+sizeof(mA) = 20
+sizeof(set<int>) = 20
+sizeof(sA) = 20
 sizeof(CA) = 4
 sizeof(cA) = 4
 sizeof(CB) = 20
@@ -82,6 +86,14 @@ int main() {
     unordered_set<int> usA;
     cout<<"sizeof(unordered_set<int>) = "<<sizeof(unordered_set<int>)<<endl;
     cout<<"sizeof(usA) = "<<sizeof(usA)<<endl;
+
+    map<int, int> mA;
+    cout<<"sizeof(map<int, int>) = "<<sizeof(map<int, int>)<<endl;
+    cout<<"sizeof(mA) = "<<sizeof(mA)<<endl;
+
+    set<int> sA;
+    cout<<"sizeof(set<int>) = "<<sizeof(set<int>)<<endl;
+    cout<<"sizeof(sA) = "<<sizeof(sA)<<endl;
 
     CA cA;
     cout<<"sizeof(CA) = "<<sizeof(CA)<<endl;
