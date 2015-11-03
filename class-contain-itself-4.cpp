@@ -46,7 +46,7 @@ public:
 };
 
 int ListNodeHash::operator()(const ListNode & node) const {
-    int hashVal = 0;
+    int hashVal = node.val;
     return hashVal;
 }
 
