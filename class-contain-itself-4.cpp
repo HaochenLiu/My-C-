@@ -1,6 +1,5 @@
 /*
-这是无法编译通过的。
-一个类不能包含自己的unordered_set或者unordered_map。
+这是可以编译通过的。
 */
 
 #include <algorithm>
@@ -32,14 +31,26 @@
 
 using namespace std;
 
-class ListNode {
-    int val;
-    unordered_set<ListNode> s;
-    unordered_map<string, ListNode> m;
+class ListNodeHash;
+class ListNode;
+
+class ListNodeHash {
+public:
+    int operator()(const ListNode & node) const;
 };
 
+class ListNode {
+public:
+    int val;
+    unordered_set<ListNode, ListNodeHash> s;
+};
+
+int ListNodeHash::operator()(const ListNode & node) const {
+    int hashVal = 0;
+    return hashVal;
+}
+
 int main() {
-    ListNode node;
     cout<<"test"<<endl;
     
     int wait = 0;
