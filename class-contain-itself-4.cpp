@@ -35,12 +35,13 @@ using namespace std;
 class ListNode {
     int val;
     unordered_set<ListNode> s;
-    unordered_map<string, ListNode> s;
+    unordered_map<string, ListNode> m;
 };
 
 int main() {
     ListNode node;
-
+    cout<<"test"<<endl;
+    
     int wait = 0;
     cin>>wait;
 
